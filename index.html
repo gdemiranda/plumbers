@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Never Miss Another Plumbing Enquiry</title>
+    <meta
+      name="description"
+      content="A one-page animated demo showing how an AI job intake system captures and sends plumbing enquiries."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800;900&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="stage" aria-label="AI job intake demo for plumbers">
+      <section class="hero" aria-labelledby="page-title">
+        <h1 id="page-title">Never miss another plumbing enquiry.</h1>
+
+        <div class="demo-frame" aria-label="Animated demo showing a customer enquiry being asked the right questions and sent to an organised worksheet">
+          <div class="flow-label label-one">Client message</div>
+          <div class="flow-label label-two">Smart questions</div>
+          <div class="flow-label label-three">Organised worksheet</div>
+
+          <div class="scene scene-home" aria-hidden="true">
+            <div class="room">
+              <div class="window"></div>
+              <div class="sink">
+                <div class="tap"></div>
+                <div class="basin"></div>
+                <div class="drip drip-one"></div>
+                <div class="drip drip-two"></div>
+                <div class="puddle"></div>
+              </div>
+              <div class="customer-phone">
+                <div class="phone-notch"></div>
+                <div class="phone-screen">
+                  <span class="chat incoming">Pipe leaking</span>
+                  <span class="chat outgoing">Postcode?</span>
+                  <span class="chat outgoing">Photo?</span>
+                  <span class="chat outgoing">Urgent?</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="message-card message-start" aria-hidden="true">
+            <span class="bubble-dot"></span>
+            <div class="answer-chips">
+              <span>SW17</span>
+              <span>Photo</span>
+              <span>Urgent</span>
+            </div>
+          </div>
+
+          <div class="data-route" aria-hidden="true">
+            <span class="route-dot route-one"></span>
+            <span class="route-dot route-two"></span>
+            <span class="route-dot route-three"></span>
+          </div>
+
+          <div class="system-panel" aria-hidden="true">
+            <div class="panel-top">
+              <span></span>
+              <span></span>
+              <span></span>
+              <strong>Job intake sheet</strong>
+            </div>
+            <div class="sheet-head">
+              <span>Job</span>
+              <span>Postcode</span>
+              <span>Photo</span>
+              <span>Urgency</span>
+              <span>Status</span>
+            </div>
+            <div class="sheet-row active">
+              <span>Leak</span>
+              <span>SW17</span>
+              <span>Yes</span>
+              <span>Urgent</span>
+              <span>New</span>
+            </div>
+            <div class="sheet-row muted-row">
+              <span>Boiler</span>
+              <span>CR4</span>
+              <span>Yes</span>
+              <span>Today</span>
+              <span>Quoted</span>
+            </div>
+          </div>
+
+          <div class="plumber-phone" aria-hidden="true">
+            <div class="phone-speaker"></div>
+            <div class="alert-light"></div>
+            <div class="phone-card">
+              <strong>New job</strong>
+              <span>Leak • SW17 • urgent</span>
+            </div>
+          </div>
+
+          <div class="road" aria-hidden="true">
+            <div class="van">
+              <div class="van-body">
+                <span class="van-window"></span>
+                <span class="van-mark"></span>
+              </div>
+              <span class="wheel wheel-front"></span>
+              <span class="wheel wheel-back"></span>
+            </div>
+          </div>
+
+          <div class="final-card" aria-hidden="true">
+            <span class="checkmark"></span>
+            <strong>Ready</strong>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
