@@ -3,139 +3,224 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AI Job Intake Demo for Plumbers</title>
+    <title>Stop Losing Plumbing Jobs While You're On-site</title>
     <meta
       name="description"
-      content="See how a plumbing enquiry becomes a clean job sheet: postcode, photos, urgency and customer details captured automatically."
+      content="A simple job intake system for UK plumbers: collect issue, postcode, urgency, photos and availability, then receive a clean job card."
     >
     <link rel="canonical" href="https://gdemiranda.github.io/plumbers/">
-    <meta property="og:title" content="AI Job Intake Demo for Plumbers">
+    <meta property="og:title" content="Stop Losing Plumbing Jobs While You're On-site">
     <meta
       property="og:description"
-      content="Customer messages get asked the right questions, then land in an organised worksheet ready for the plumber."
+      content="Missed and messy enquiries become clean job cards with postcode, photos, urgency and availability ready to reply to."
     >
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://gdemiranda.github.io/plumbers/">
     <meta property="og:image" content="https://gdemiranda.github.io/plumbers/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Animated plumbing job intake demo with customer questions, worksheet, and job alert">
+    <meta property="og:image:alt" content="Plumbing job intake demo showing customer details becoming an organised job card">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="AI Job Intake Demo for Plumbers">
+    <meta name="twitter:title" content="Stop Losing Plumbing Jobs While You're On-site">
     <meta
       name="twitter:description"
-      content="Customer messages get asked the right questions and become an organised job sheet automatically."
+      content="Collect issue, postcode, urgency, photos and availability before you call back."
     >
     <meta name="twitter:image" content="https://gdemiranda.github.io/plumbers/og-image.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap"
       rel="stylesheet"
     >
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <main class="stage" aria-label="AI job intake demo for plumbers">
+    <main>
       <section class="hero" aria-labelledby="page-title">
-        <h1 id="page-title">Never miss another plumbing enquiry.</h1>
+        <div class="hero-copy">
+          <p class="eyebrow">For UK plumbers and boiler engineers</p>
+          <h1 id="page-title">Stop losing plumbing jobs while you're on-site.</h1>
+          <p class="hero-subhead">
+            A simple job intake system that collects the customer's issue,
+            postcode, urgency, photos and availability — then sends you a clean
+            job card so you can reply faster.
+          </p>
 
-        <div class="demo-frame" aria-label="Animated demo showing a customer enquiry being asked the right questions and sent to an organised worksheet">
-          <div class="flow-label label-one">Client message</div>
-          <div class="flow-label label-two">Smart questions</div>
-          <div class="flow-label label-three">Organised worksheet</div>
+          <div class="hero-actions" aria-label="Demo actions">
+            <a class="button primary" href="mailto:miranda.uk@gmail.com?subject=Watch%2060-sec%20plumbing%20intake%20demo">Watch 60-sec demo</a>
+            <a class="button secondary" href="#pilot">Book the £200 pilot</a>
+          </div>
+          <p class="pilot-line">Pilot setup this week: £200 instead of £500 · Only 3 spots</p>
+        </div>
 
-          <div class="scene scene-home" aria-hidden="true">
-            <div class="room">
-              <div class="window"></div>
-              <div class="sink">
-                <div class="tap"></div>
-                <div class="basin"></div>
-                <div class="drip drip-one"></div>
-                <div class="drip drip-two"></div>
-                <div class="puddle"></div>
-              </div>
-              <div class="customer-phone">
-                <div class="phone-notch"></div>
-                <div class="phone-screen">
-                  <span class="chat incoming">Pipe leaking</span>
-                  <span class="chat outgoing">Postcode?</span>
-                  <span class="chat outgoing">Photo?</span>
-                  <span class="chat outgoing">Urgent?</span>
-                </div>
-              </div>
+        <div class="hero-visual" aria-label="Plumbing enquiry intake visual demo">
+          <div class="visual-label label-client">Customer message</div>
+          <div class="visual-label label-system">Details sorted first</div>
+          <div class="visual-label label-card">Clean job card</div>
+
+          <div class="phone customer-phone" aria-hidden="true">
+            <div class="phone-speaker"></div>
+            <div class="chat-screen">
+              <span class="chat incoming">Boiler leaking</span>
+              <span class="chat outgoing">Postcode?</span>
+              <span class="chat outgoing">Photo?</span>
+              <span class="chat outgoing">When are you free?</span>
             </div>
           </div>
 
-          <div class="message-card message-start" aria-hidden="true">
-            <span class="bubble-dot"></span>
-            <div class="answer-chips">
-              <span>SW17</span>
-              <span>Photo</span>
-              <span>Urgent</span>
-            </div>
+          <div class="answer-strip" aria-hidden="true">
+            <span>LS8</span>
+            <span>Photos</span>
+            <span>Today</span>
+            <span>After 4pm</span>
           </div>
 
-          <div class="data-route" aria-hidden="true">
-            <span class="route-dot route-one"></span>
-            <span class="route-dot route-two"></span>
-            <span class="route-dot route-three"></span>
-          </div>
-
-          <div class="system-panel" aria-hidden="true">
-            <div class="panel-top">
-              <span></span>
-              <span></span>
-              <span></span>
-              <strong>Job intake sheet</strong>
+          <article class="job-card hero-card">
+            <div class="card-top">
+              <span class="status-dot"></span>
+              <strong>New job card</strong>
             </div>
-            <div class="sheet-head">
+            <h2>Sarah, LS8</h2>
+            <p>Boiler leaking underneath. Emergency today. Available after 4pm. Photos uploaded.</p>
+            <div class="card-tags">
+              <span class="badge urgency-today">Today</span>
+              <span class="badge status-new">New</span>
+              <span class="badge area">LS8</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="steps-section" aria-labelledby="steps-title">
+        <div class="section-heading">
+          <p class="eyebrow">How it works</p>
+          <h2 id="steps-title">Less back-and-forth before you call back.</h2>
+        </div>
+        <div class="steps-grid">
+          <article class="step-card">
+            <span class="step-number">1</span>
+            <h3>Customer sends the issue + postcode</h3>
+            <p>A leak, boiler problem, no hot water, tap issue, or repair request comes in.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-number">2</span>
+            <h3>System collects urgency, photos and availability</h3>
+            <p>The messy details get sorted before you spend 20 minutes asking the same questions.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-number">3</span>
+            <h3>You receive a clean job card and reply personally</h3>
+            <p>Your customer still hears from you — the system just gets the messy details sorted first.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="example-section" aria-labelledby="example-title">
+        <div class="section-heading">
+          <p class="eyebrow">Example dashboard</p>
+          <h2 id="example-title">Every enquiry becomes something you can act on.</h2>
+        </div>
+
+        <div class="example-layout">
+          <div class="dashboard">
+            <div class="dashboard-bar">
+              <span></span>
+              <span></span>
+              <span></span>
+              <strong>Job board</strong>
+            </div>
+            <div class="dashboard-head">
               <span>Job</span>
-              <span>Postcode</span>
-              <span>Photo</span>
+              <span>Area</span>
               <span>Urgency</span>
               <span>Status</span>
             </div>
-            <div class="sheet-row active">
-              <span>Leak</span>
-              <span>SW17</span>
-              <span>Yes</span>
-              <span>Urgent</span>
-              <span>New</span>
+            <div class="dashboard-row">
+              <strong>Boiler leak</strong>
+              <span>LS8</span>
+              <span class="badge urgency-today">Today</span>
+              <span class="badge status-new">New</span>
             </div>
-            <div class="sheet-row muted-row">
-              <span>Boiler</span>
-              <span>CR4</span>
-              <span>Yes</span>
-              <span>Today</span>
-              <span>Quoted</span>
+            <div class="dashboard-row">
+              <strong>No hot water</strong>
+              <span>M14</span>
+              <span class="badge urgency-24">24h</span>
+              <span class="badge status-quoted">Quoted</span>
             </div>
-          </div>
-
-          <div class="plumber-phone" aria-hidden="true">
-            <div class="phone-speaker"></div>
-            <div class="alert-light"></div>
-            <div class="phone-card">
-              <strong>New job</strong>
-              <span>Leak &bull; SW17 &bull; urgent</span>
+            <div class="dashboard-row">
+              <strong>Tap leak</strong>
+              <span>B12</span>
+              <span class="badge urgency-flex">Flexible</span>
+              <span class="badge status-follow">Follow-up</span>
             </div>
           </div>
 
-          <div class="road" aria-hidden="true">
-            <div class="van">
-              <div class="van-body">
-                <span class="van-window"></span>
-                <span class="van-mark"></span>
+          <article class="job-card example-card">
+            <div class="card-top">
+              <span class="status-dot"></span>
+              <strong>Clean job card</strong>
+            </div>
+            <dl class="job-details">
+              <div>
+                <dt>Customer</dt>
+                <dd>Sarah</dd>
               </div>
-              <span class="wheel wheel-front"></span>
-              <span class="wheel wheel-back"></span>
+              <div>
+                <dt>Phone</dt>
+                <dd>07xxx xxx xxx</dd>
+              </div>
+              <div>
+                <dt>Postcode</dt>
+                <dd>LS8</dd>
+              </div>
+              <div>
+                <dt>Issue</dt>
+                <dd>Boiler leaking underneath</dd>
+              </div>
+              <div>
+                <dt>Urgency</dt>
+                <dd>Emergency today</dd>
+              </div>
+              <div>
+                <dt>Availability</dt>
+                <dd>After 4pm</dd>
+              </div>
+              <div>
+                <dt>Photos</dt>
+                <dd>Uploaded</dd>
+              </div>
+            </dl>
+            <div class="suggested-reply">
+              <span>Suggested next reply</span>
+              <p>Hi Sarah, I can take a look today between 5–7. Is the leak still active?</p>
             </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="pilot" class="pilot-section" aria-labelledby="pilot-title">
+        <div class="offer-box">
+          <div class="offer-copy">
+            <p class="eyebrow">Paid pilot this week</p>
+            <h2 id="pilot-title">£200 Pilot Setup</h2>
+            <p class="normal-price">Normally £500 · only 2–3 UK plumbers or boiler engineers</p>
+            <p>
+              Built with you, around the way your enquiries already come in.
+              In exchange, you give feedback and a case study if it helps.
+            </p>
+            <a class="button primary" href="mailto:miranda.uk@gmail.com?subject=Send%20me%20the%20plumber%20intake%20demo">Send me the demo</a>
           </div>
 
-          <div class="final-card" aria-hidden="true">
-            <span class="checkmark"></span>
-            <strong>Ready</strong>
-          </div>
+          <ul class="offer-list" aria-label="Pilot includes">
+            <li>Setup done with you</li>
+            <li>Job intake form</li>
+            <li>Google Sheet job board</li>
+            <li>Email notification</li>
+            <li>Missed enquiry message template</li>
+            <li>Follow-up and review request templates</li>
+            <li>30-minute setup call</li>
+          </ul>
         </div>
       </section>
     </main>
